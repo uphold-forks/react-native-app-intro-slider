@@ -34,6 +34,8 @@ export default class AppIntroSlider extends React.Component {
     prevLabel: 'Back',
     buttonStyle: null,
     buttonTextStyle: null,
+    paginationContainerStyle: {},
+    paginationDotsStyle: {}
   }
   state = {
     width,
@@ -109,8 +111,8 @@ export default class AppIntroSlider extends React.Component {
     const btn = isLastSlide ? this._renderDoneButton() : this._renderNextButton();
 
     return (
-      <View style={styles.paginationContainer}>
-        <View style={styles.paginationDots}>
+      <View style={[styles.paginationContainer, this.props.paginationContainerStyle]}>
+        <View style={[styles.paginationDots, this.props.paginationDotsStyle]}>
           {!this.props.bottomButton && skipBtn}
           {this.props.slides.length > 1 && this.props.slides.map((_, i) => (
             <View

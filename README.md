@@ -248,23 +248,25 @@ The component extends `FlatList` so all FlatList-props are valid.
 
 ### Configure looks
 
-Name             | Type       | Default                   | Description
------------------|------------|---------------------------|--------------
-skipLabel        | `string`   | `Skip`                    | Custom label for Skip button
-doneLabel        | `string`   | `Done`                    | Custom label for Done button
-nextLabel        | `string`   | `Next`                    | Custom label for Next button
-prevLabel        | `string`   | `Back`                    | Custom label for Prev button
-bottomButton     | `boolean`  | `false`                   | Enable to show a full-width button under pagination
-buttonStyle      | `style`    | `null`                    | Styling of outer button component
-buttonTextStyle  | `style`    | `null`                    | Styling of button text component
-dotStyle         | `style`    | {backgroundColor: 'rgba(0, 0, 0, .2)'} | Style of inactive pagination dots
-activeDotStyle   | `style`    | {backgroundColor: 'rgba(255, 255, 255, .9)'} | Style of active pagination dot
-hidePagination   | `boolean`  | `false`                   | Enable to hide the pagination
-renderNextButton | `function` | renders a Text-component  | Use to supply your own next button
-renderPrevButton | `function` | renders a Text-component  | Use to supply your own prev button
-renderDoneButton | `function` | renders a Text-component  | Use to supply your own done button
-renderSkipButton | `function` | renders a Text-component  | Use to supply your own skip button
-renderItem       | `function` | renders `DefaultSlide`    | Function returning a slide. The function is passed the slide object as wells as `{ topSpacer: Number, bottomSpacer: Number }`. These show the "safe-space" where other UI is not interfering - take a look at `DefaultSlide.js` too see how they are set up.
+Name                     | Type       | Default                                      | Description
+-------------------------|------------|----------------------------------------------|--------------
+skipLabel                | `string`   | `Skip`                                       | Custom label for Skip button
+doneLabel                | `string`   | `Done`                                       | Custom label for Done button
+nextLabel                | `string`   | `Next`                                       | Custom label for Next button
+prevLabel                | `string`   | `Back`                                       | Custom label for Prev button
+bottomButton             | `boolean`  | `false`                                      | Enable to show a full-width button under pagination
+buttonStyle              | `style`    | `null`                                       | Styling of outer button component
+buttonTextStyle          | `style`    | `null`                                       | Styling of button text component
+dotStyle                 | `style`    | {backgroundColor: 'rgba(0, 0, 0, .2)'}       | Style of inactive pagination dots
+activeDotStyle           | `style`    | {backgroundColor: 'rgba(255, 255, 255, .9)'} | Style of active pagination dot
+hidePagination           | `boolean`  | `false`                                      | Enable to hide the pagination
+paginationContainerStyle | `style`    | {backgroundColor: 'rgba(255, 255, 255, .9)'} | Style of the pagination container
+paginationDotsStyle      | `style`    | {backgroundColor: 'rgba(255, 255, 255, .9)'} | Style of the pagination dots container
+renderNextButton         | `function` | renders a Text-component                     | Use to supply your own next button
+renderPrevButton         | `function` | renders a Text-component                     | Use to supply your own prev button
+renderDoneButton         | `function` | renders a Text-component                     | Use to supply your own done button
+renderSkipButton         | `function` | renders a Text-component                     | Use to supply your own skip button
+renderItem               | `function` | renders `DefaultSlide`                       | Function returning a slide. The function is passed the slide object as wells as `{ topSpacer: Number, bottomSpacer: Number }`. These show the "safe-space" where other UI is not interfering - take a look at `DefaultSlide.js` too see how they are set up.
 
 ### Configure behavior
 
